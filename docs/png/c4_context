@@ -1,0 +1,10 @@
+digraph {
+	graph [fontcolor="#2D3436" fontname="Sans-Serif" fontsize=15 label="" nodesep=0.60 pad=2.0 rankdir=TB ranksep=0.75 splines=spline]
+	node [fixedsize=true fontcolor="#2D3436" fontname="Sans-Serif" fontsize=13 height=1.4 imagescale=true labelloc=b shape=box style=rounded width=1.4]
+	edge [color="#7B8894"]
+	"496db6fa23a3455db5eaf08cf5336657" [label=<<font point-size="12"><b>Клиент</b></font><br/><font point-size="9">[Person]<br/></font><br/><font point-size="10">Использует AI-помощника SelfGrowFood<br/><br/></font>> fillcolor=dodgerblue4 fixedsize=true fontcolor=white height=1.6 labelloc=c shape=rect style="rounded,filled" width=2.6]
+	"4c3a9c772caf4fe5931987ed3c206cf3" [label=<<font point-size="12"><b>SelfGrowFood</b></font><br/><font point-size="9">[Software system]<br/></font><br/><font point-size="10">AI-помощник по созданию индивидуальных<br/>планов питания<br/></font>> fillcolor=dodgerblue3 fixedsize=true fontcolor=white height=1.6 labelloc=c shape=rect style=filled width=2.6]
+	"4aa2f06c598d429083e981ac1b3fdd6f" [label=<<font point-size="12"><b>Stock Exchange</b></font><br/><font point-size="9">[External Software System]<br/></font>> fillcolor=gray60 fixedsize=true fontcolor=white height=1 labelloc=c shape=rect style=filled width=2]
+	"496db6fa23a3455db5eaf08cf5336657" -> "4c3a9c772caf4fe5931987ed3c206cf3" [label=<<font point-size="10">Использует один из<br/>доступных каналов<br/>взаимодействия</font>> color=gray60 dir=forward fontcolor="#2D3436" fontname="Sans-Serif" fontsize=13 style=dashed]
+	"4c3a9c772caf4fe5931987ed3c206cf3" -> "4aa2f06c598d429083e981ac1b3fdd6f" [label=<<font point-size="10">Интеграция внешнего<br/>инструмента для<br/>проведения транзакций</font>> color=gray60 dir=both fontcolor="#2D3436" fontname="Sans-Serif" fontsize=13 style=dashed]
+}
